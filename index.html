@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="proyecto.js"></script>
+    <link rel="stylesheet" type="text/css" href="proyecto.css">
+    <title> App</title>
+</head>
+<body>
+  <header>
+    <a href="https://www.instagram.com/dulci_trico?igsh=MTN0d2V3eWVkd2Z1cA==">
+        <img src="IMG/Dulcitrico.png" width="90" height="100" alt="Logo Dulcitrico">
+    </a>
+    <div class="logo">
+        <a href="https://www.instagram.com/dulci_trico?igsh=MTN0d2V3eWVkd2Z1cA==">
+            <img src="IMG/Ig.png" alt="Instagram Logo">
+        </a>
+    </div>
+  </header>
+
+  <h1>Bienvenidos a Dulcitrico, tu tienda favorita.</h1>
+  <br>
+  <p>Hecha un vistazo a nuestros productos</p>
+  <br>
+  <div class="contenedor-productos">
+    <div class="items">
+      <figure> 
+        <img src="IMG/azulito loco.jpg" alt="Azulito">
+      </figure>
+      <div class="info-producto">
+        <h2>Azulitos</h2>
+        <div class="opciones">
+          <form>
+            <label for="option-azulitos">Sección Azulitos:</label>
+            <select id="option-azulitos">
+              <option value="1.25">Clásico Vaso Mediano - $1.25</option>
+              <option value="1.50">Clásico Vaso Grande - $1.50</option>
+              <option value="2.00">Azulito Loco Vaso Mediano - $2.00</option>
+              <option value="2.50">Azulito Loco Vaso Grande - $2.50</option>
+              <option value="2.25">Coctel Azulito Vaso Mediano - $2.25</option>
+              <option value="2.50">Coctel Azulito Vaso Grande - $2.50</option>
+            </select>
+          </form> 
+          <label for="cantidad-azulitos">Ingrese la cantidad:</label>
+          <input type="number" id="cantidad-azulitos" min="0" value="0">
+          <div id="resultado-azulitos"></div>
+          <span id="precio-producto-azulitos"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="items">
+      <figure> 
+        <img src="IMG/gomitas locas.jpg" alt="Gomi locas">
+      </figure>
+      <div class="info-producto">
+        <h3>Gomitas</h3>
+        <div class="opciones">
+          <form>
+            <label for="option-gomitas">Sección Gomitas:</label>
+            <select id="option-gomitas">
+              <option value="1.50">Gomitas Clásicas - $1.25</option>
+              <option value="1.75">Gomitas con chile - $1.50</option>
+              <option value="2.00">Gomitas locas - $2.00</option>
+              <option value="2.00">Gomitas Dulces - $2.00</option>
+            </select>
+          </form>
+          <label for="cantidad-gomitas">Ingrese la cantidad:</label>
+          <input type="number" id="cantidad-gomitas" min="0" value="0">
+          <div id="resultado-gomitas"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="items">
+      <figure> 
+        <img src="IMG/pinchos.jpg" alt="Pincho">
+      </figure>
+      <div class="info-producto">
+        <h4>Pinchos</h4>
+        <div class="opciones">
+          <form>
+            <label for="option-pinchos">Sección Pinchos:</label>
+            <select id="option-pinchos">
+              <option value="1.25">Pincho Clásico - $1.25</option>
+              <option value="1.50">Pincho especial - $1.50</option>
+              <option value="2.00">Pincho con chile - $2.00</option>
+              <option value="2.50">Pincho loco - $2.50</option>
+            </select>
+          </form>
+          <label for="cantidad-pinchos">Ingrese la cantidad:</label>
+          <input type="number" id="cantidad-pinchos" min="0" value="0">
+          <div id="resultado-pinchos"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="total">
+    <br><br>
+    <button onclick="total()">Calcular Total</button>
+    <br><br>
+    <div id="Resultado"></div>
+  </div>
+</body>
+</html>
